@@ -127,6 +127,52 @@ feedbackTitle = () => {
 	})
 }
 
+buttonEvent = () => {
+	// 顶栏
+	let sideBarTrigger = document.getElementById('side-menu-trigger')
+
+	// 边栏
+	let sideBar = document.getElementById('side-content')
+	let sideBarClose = document.getElementById('sidebar-close')
+	let sideBarMask = document.getElementById('sidebar-mask')
+
+	// 窗体
+	let bodyStyle = document.body
+
+	// 暗色遮罩消失
+	maskFadeOut = (theMask) => {
+		theMask.classList.add('dark-mask-hide')
+		theMask.classList.remove('dark-mask-show')
+		setTimeout(() => {
+			theMask.classList.remove('dark-mask-hide')
+			theMask.style.removeProperty('display', 'block')
+		}, 500)
+	}
+
+	// 边栏事件
+	sideBarTrigger.addEventListener('click', () => {
+		sideBar.classList.add('sidebar-show')
+		bodyStyle.style.setProperty('overflow', 'hidden')
+		sideBarMask.classList.add('dark-mask-show')
+		sideBarMask.style.setProperty('display', 'block')
+	})
+
+	shutSidebar = () => {
+		sideBar.classList.remove('sidebar-show')
+		bodyStyle.style.removeProperty('overflow', 'hidden')
+		maskFadeOut(sideBarMask)
+	}
+
+	sideBarClose.addEventListener('click', () => {
+		shutSidebar()
+	})
+
+	sideBarMask.addEventListener('click', () => {
+		shutSidebar()
+	})
+}
+
 scrollDownInIndex()
 topbarFadeChange()
 feedbackTitle()
+buttonEvent()
