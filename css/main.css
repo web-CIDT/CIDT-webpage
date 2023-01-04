@@ -347,7 +347,7 @@ body {
     margin: auto;
     margin-left: 2vw;
     height: 45px;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.6em;
     font-weight: 600;
     text-shadow: 3px 3px 5px var(--text-shadow-color);
@@ -393,14 +393,14 @@ body {
     }
 }
 
-#nav-bar #site-name:hover .mini-avatar {
+/* #nav-bar #site-name:hover .mini-avatar {
     transition: all 1s;
     -webkit-transform: rotate(720deg);
     -moz-transform: rotate(720deg);
     -o-transform: rotate(720deg);
     transform: rotate(720deg);
     -ms-transform: rotate(720deg);
-}
+} */
 
 #nav-bar #menus {
     display: flex;
@@ -552,7 +552,7 @@ body {
     font-family: 'deyi';
     font-size: 2.5em;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     text-shadow: 3px 3px 4px var(--text-shadow-color);
     transition: all 1s linear;
 }
@@ -626,7 +626,7 @@ body {
 @media screen and (min-width: 769px) {
     #banner #motto-box {
         font-size: 1.6em;
-        line-height: 1.6;
+        line-height: 1.2;
     }
 }
 
@@ -642,7 +642,7 @@ body {
     height: 100%;
     background-color: var(--white);
     position: absolute;
-    left: 0;
+    left: 5px;
 }
 
 #banner #site-motto {
