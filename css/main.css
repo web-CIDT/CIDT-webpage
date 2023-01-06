@@ -91,8 +91,13 @@ span {
 }
 
 @font-face {
-	font-family: 'deyi';
-	src: url('../font/SmileySans-Oblique.ttf.woff2');
+	font-family: 'yuehei';
+	src: url('../font/YueHei.otf');
+}
+
+@font-face {
+	font-family: 'FB';
+	src: url('../font/AgencyFB.ttf')
 }
 
 /* color-scheme */
@@ -230,27 +235,27 @@ html {
 
 /* placeholder */
 ::-webkit-input-placeholder {
-	font-family: 'deyi';
+	font-family: 'yuehei';
 }
 
 :-moz-placeholder {
-	font-family: 'deyi';
+	font-family: 'yuehei';
 }
 
 ::-moz-placeholder {
-	font-family: 'deyi';
+	font-family: 'yuehei';
 }
 
 :-ms-input-placeholder {
-	font-family: 'deyi' !important;
+	font-family: 'yuehei' !important;
 }
 
 ::-ms-input-placeholder {
-	font-family: 'deyi';
+	font-family: 'yuehei';
 }
 
 ::placeholder {
-	font-family: 'deyi';
+	font-family: 'yuehei';
 }
 
 /* veiw-box */
@@ -526,13 +531,14 @@ body {
 @media screen and (max-width: 768px) {
 	#banner .show-container {
 		width: 80%;
+		top: 20vh;
 	}
 }
 
 #banner #site-title {
 	color: var(--white);
 	margin-bottom: 5px;
-	font-family: 'deyi';
+	font-family: 'yuehei';
 	font-size: 2.5em;
 	font-weight: 500;
 	text-shadow: 3px 3px 4px var(--text-shadow-color);
@@ -555,22 +561,22 @@ body {
 #banner #title-en {
 	margin-bottom: 30px;
 	color: var(--white);
-	font-size: 1.2em;
+	font-size: 1.4em;
 	line-height: 1.2;
-	font-family: 'deyi';
+	font-family: 'FB';
 	text-shadow: 4px 4px 3px var(--text-shadow-color);
 }
 
 @media screen and (min-width: 769px) {
 	#banner #title-en {
-		font-size: 1.4em;
+		font-size: 1.6em;
 		text-shadow: 4px 4px 5px var(--text-shadow-color);
 	}
 }
 
 @media screen and (max-width: 375px) {
 	#banner #title-en {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
 
@@ -580,7 +586,6 @@ body {
 
 #banner #title-en .letter-important {
 	color: var(--orange);
-	font-size: 1.3em;
 }
 
 @media screen and (min-width: 769px) {
@@ -592,7 +597,7 @@ body {
 
 @media screen and (max-width: 375px) {
 	#banner #title-en .letter-important {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
 
@@ -600,7 +605,7 @@ body {
 	position: relative;
 	display: inline-block;
 	color: var(--white);
-	font-size: 1.4em;
+	font-size: 1.2em;
 	letter-spacing: 2px;
 	writing-mode: vertical-lr;
 	margin-top: 30px;
@@ -609,14 +614,15 @@ body {
 
 @media screen and (min-width: 769px) {
 	#banner #motto-box {
-		font-size: 1.6em;
+		font-size: 1.4em;
 		line-height: 1.2;
 	}
 }
 
 @media screen and (max-width: 375px) {
 	#banner #motto-box {
-		font-size: 1.2em;
+		font-size: 1em;
+		margin-top: 20px;
 	}
 }
 
