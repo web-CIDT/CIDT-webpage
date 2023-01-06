@@ -278,7 +278,7 @@ body {
 
 /* page */
 #main-page {
-	font-family: 'webfont';
+	font-family: 'yuehei';
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -464,7 +464,7 @@ body {
 	margin-right: 5px;
 	padding: 10px;
 	cursor: pointer;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 #nav-bar .site-link {
@@ -523,7 +523,7 @@ body {
 
 #banner .show-container {
 	position: relative;
-	top: 30vh;
+	top: calc(50% - 30vh);
 	text-align: center;
 	translate: 0.25s;
 }
@@ -531,7 +531,7 @@ body {
 @media screen and (max-width: 768px) {
 	#banner .show-container {
 		width: 80%;
-		top: 20vh;
+		top: calc(50% - 40vh);
 	}
 }
 
@@ -552,7 +552,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	#banner #site-title {
 		font-size: 1.5em;
 	}
@@ -606,16 +606,17 @@ body {
 	display: inline-block;
 	color: var(--white);
 	font-size: 1.2em;
-	letter-spacing: 2px;
 	writing-mode: vertical-lr;
-	margin-top: 30px;
+	margin-top: 5vh;
 	text-shadow: 4px 4px 3px var(--text-shadow-color);
+	border-radius: 5px;
 }
 
 @media screen and (min-width: 769px) {
 	#banner #motto-box {
 		font-size: 1.4em;
 		line-height: 1.2;
+		letter-spacing: 2px;
 	}
 }
 
@@ -751,7 +752,7 @@ body {
 #flow-area,
 #box-area,
 #member-area,
-#link-area {
+#shop-area {
 	position: relative;
 	top: 100%;
 	width: 100%;
@@ -764,7 +765,7 @@ body {
 
 #about-area,
 #box-area,
-#link-area {
+#shop-area {
 	background-color: var(--global-bg-color-bright);
 }
 
