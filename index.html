@@ -39,6 +39,7 @@
 
 <body class="cover">
     <div id="main-page">
+        <!-- 边栏|sidebar -->
         <div id="side-menu-bar">
             <div id="sidebar-mask" class="dark-mask"></div>
             <div id="side-content">
@@ -65,6 +66,30 @@
                 </div>
             </div>
         </div>
+        <!-- 浮动按钮|float-button -->
+		<div id="float-button">
+			<div id="back-to-top" class="button-display"><i class="ri-arrow-up-fill"></i></div>
+			<div id="page-share" class="button-display"><i class="ri-share-fill"></i></div>
+			<div id="page-sitting" class="button-display">
+				<div class="rolling"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+						<path
+							d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+							fill="var(--light-black)" />
+					</svg></div>
+			</div>
+			<div id="sitting-content">
+				<div id="sitting-close" class="close-button"><i class="ri-close-fill"></i></div>
+				<div class="mod-title">颜色模式</div>
+				<ul class="mod-box">
+					<li id="mod-1"><i class="ri-24-hours-fill"></i>自动</li>
+					<li id="mod-2"><i class="ri-sun-fill"></i>浅色</li>
+					<li id="mod-3"><i class="ri-moon-fill"></i>深色</li>
+					<li id="mod-4"><i class="ri-markup-fill"></i>低亮</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 响应遮罩|event-mask -->
+		<div id="event-mask"></div>
         <!-- 页面主体|fullpage -->
         <div class="main-div">
             <div id="full-screen-banner"></div>
@@ -90,9 +115,9 @@
                             </div>
                         </div>
                         <div id="short-button">
-                            <div id="mod-button"><a id="auto-mod" class="site-button" alt="自动模式" title="自动模式"><i
-                                        class="ri-contrast-2-fill"></i></a><!--a id="moonlight-mod" class="site-button"
-                                alt="深色模式" title="深色模式"><i class="ri-contrast-2-line"></i></a-->
+                            <div id="mod-button"><a id="light-mod" class="site-button" alt="切换颜色模式" title="切换颜色模式"><i
+                                        class="ri-contrast-2-fill"></i></a><a id="dark-mod" class="site-button"
+                                alt="切换颜色模式" title="切换颜色模式"><i class="ri-contrast-2-line"></i></a>
                             </div>
                             <!-- <div id="search-button"><a class="site-button"><i class="ri-search-line"></i></a></div> -->
                             <div id="side-menu-trigger"><a class="site-button"><i class="ri-menu-fill"></i></a></div>
@@ -129,17 +154,34 @@
                         <span class="cutline"></span>
                         <div id="about-content">
                             <p>《戴森球计划》官方认证</p>
-                            <p>聚集了全星系主脑最想消灭的伊卡洛斯</p>
+                            <p>聚集全星系主脑最想消灭的伊卡洛斯</p>
                             <p>整活没有上限</p>
                             <p>个个都是人才，说话又好听</p>
                             <p>在肝帝和鸽帝间反复横跳</p>
                             <p>不止游戏</p>
                         </div>
+                        <div class="more-button">更多>>></div>
                     </div>
-                    <div id="flow-area"></div>
-                    <div id="box-area"></div>
-                    <div id="member-area"></div>
-                    <div id="time-area"></div>
+                    <div id="flow-area">
+                        <h2>最新作品</h2>
+                        <span class="cutline"></span>
+                        <div class="more-button">更多>>></div>
+                    </div>
+                    <div id="box-area">
+                        <h2>相关工具</h2>
+                        <span class="cutline"></span>
+                        <div class="more-button">更多>>></div>
+                    </div>
+                    <div id="member-area">
+                        <h2>团队成员</h2>
+                        <span class="cutline"></span>
+                        <div class="more-button">更多>>></div>
+                    </div>
+                    <div id="link-area">
+                        <h2>联系我们</h2>
+                        <span class="cutline"></span>
+                        <div class="more-button">更多>>></div>
+                    </div>
                 </div>
             </main>
             <!-- 页底|footer -->
