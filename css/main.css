@@ -853,6 +853,50 @@ body {
 	}
 }
 
+#member-area .member-info .member-motto {
+	line-height: 2;
+	padding: 5px 0;
+}
+
+#member-area .member-info .member-description {
+	padding: 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 1.5;
+	text-align: left;
+}
+
+#member-area .member-info .member-works {
+	padding: 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 1.5;
+}
+
+#member-area .member-info .member-works a:hover {
+	color: var(--orange);
+}
+
+#member-area .member-info .member-social {
+	padding: 5px 0;
+}
+
+#member-area .member-info .social-icon {
+	display: inline-block;
+	margin: auto 5px;
+	font-size: 1.5em;
+}
+
+#member-area .member-info .social-icon:hover {
+	-webkit-animation: shaking 1s infinite;
+	-moz-animation: shaking 1s infinite;
+	-o-animation: shaking 1s infinite;
+	-ms-animation: shaking 1s infinite;
+	animation: shaking 1s infinite;
+}
+
 /* footer */
 #lab-footer {
 	padding: 40px 2vw;
