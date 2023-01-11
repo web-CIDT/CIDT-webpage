@@ -66,7 +66,7 @@ scrollDownInIndex = () => {
 // 顶栏渐变
 topbarFadeChange = () => {
 	let topbar = document.getElementById('lab-top')
-	let banner = document.getElementById('banner')
+	let banner = document.getElementById('main-inner')
 	let page = document.getElementById('page-area')
 
 	let startHeight, endHeight
