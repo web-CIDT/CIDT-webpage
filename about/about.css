@@ -1,8 +1,24 @@
 #page-head {
-    height:30vh;
+    height: 30vh;
     width: 100%;
     display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about-area .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px 0;
+    text-align:justify;
+    line-height: 1.5;
+}
+
+#about-area img {
+    width: 300px;
+    height: 300px;
 }
