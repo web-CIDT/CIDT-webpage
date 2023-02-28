@@ -7,18 +7,154 @@
     text-align: center;
 }
 
-#about-area .content-box {
+#intro-area,
+#event-area {
+    position: relative;
+    top: 100%;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    transition: 0.25s;
+    color: var(--global-fill-color);
+}
+
+#intro-area {
+    background-color: var(--global-bg-color-bright);
+}
+
+#event-area {
+    background-color: var(--global-bg-color-dark);
+}
+
+#intro-area .content-box {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 20px;
-    text-align:justify;
+    width: 80%;
+    left: 10%;
+    padding: 20px 0;
+    text-align: justify;
     line-height: 1.5;
 }
 
-#about-area img {
+#intro-area img {
     width: 300px;
     height: 300px;
+}
+
+#event-area .content-box {
+    display: flex;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.tip {
+    padding-top: 10px;
+    font-size: 12px;
+    color: var(--global-fill-color-light);
+}
+
+.log-box {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.log-box::-webkit-scrollbar {
+    height: 5px;
+    background-color: none;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--box-shadow-hover);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: var(--box-shadow-hover);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--global-fill-color-light);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(243, 166, 2, 0.8);
+}
+
+.log-box div {
+    display: inline-block;
+    padding: 0 60px;
+    padding-bottom: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.log-box div::before {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--global-fill-color-light);
+    content: '';
+}
+
+.log-box .text-time {
+    position: relative;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--global-fill-color);
+}
+
+.log-box .time-point {
+    position: relative;
+    margin: 10px 0;
+}
+
+.log-box .time-point::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: var(--global-fill-color-light);
+    content: '';
+}
+
+.log-box .text-event {
+    margin: 0;
+    margin-top: 15px;
+    color: var(--global-fill-color);
+    font-size: 14px;
+}
+
+.fade-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-image: linear-gradient(to left, var(--global-op-bg-dark), var(--global-bg-color-dark));
+}
+
+.fade-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--global-op-bg-dark), var(--global-bg-color-dark));
 }
