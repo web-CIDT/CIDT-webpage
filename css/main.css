@@ -751,9 +751,9 @@ body {
 	user-select: none;
 }
 
-#about-area,
 #flow-area,
 #box-area,
+#about-area,
 #member-area,
 #shop-area {
 	position: relative;
@@ -766,13 +766,13 @@ body {
 	color: var(--global-fill-color);
 }
 
+#flow-area,
 #about-area,
-#box-area,
 #shop-area {
 	background-color: var(--global-bg-color-bright);
 }
 
-#flow-area,
+#box-area,
 #member-area {
 	background-color: var(--global-bg-color-dark);
 }
@@ -781,12 +781,73 @@ body {
 	color: var(--global-fill-color-light);
 }
 
+#flow-area .flow-box {
+	position: relative;
+	padding: 30px 0;
+	left: 10%;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#flow-area .work-card {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	margin: 0 10px 20px 10px;
+	background-color: var(--global-bg-color-bright);
+	border-radius: 10px;
+	-webkit-box-shadow: 0 5px 10px var(--box-shadow);
+	-moz-box-shadow: 0 5px 10px var(--box-shadow);
+	box-shadow: 0 5px 10px var(--box-shadow);
+	text-align: left;
+	overflow: hidden;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+#flow-area .work-card .work-vision {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#flow-area .work-card .work-link {
+	position: relative;
+	padding: 10px 20px;
+}
+
+#flow-area .work-link .work-name {
+	margin: 5px 0 0;
+    color: var(--global-fill-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#flow-area .work-link .work-disc {
+	margin: 5px 0 0;
+    color: var(--global-fill-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#flow-area .work-link .work-cat {
+	margin: 9px 0 0;
+    font-size: 12px;
+    color: var(--global-fill-color-light);
+}
+
 #about-area #about-content {
 	padding: 30px 0;
 }
 
 #member-area .member-box {
+	position: relative;
 	padding: 30px 0;
+	left: 5%;
+	width: 90%;
 }
 
 #member-area .member-box h3 {
