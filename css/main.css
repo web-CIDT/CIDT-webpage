@@ -806,6 +806,14 @@ body {
 	cursor: pointer;
 }
 
+#flow-area .work-card .work-pic {
+	height: 155px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	filter: var(--card-brightness);
+}
+
 #flow-area .work-card .work-vision {
 	position: absolute;
     width: 100%;
