@@ -8,7 +8,8 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <meta property="og:type" content="website">
@@ -27,6 +28,7 @@
     <meta name="description" content="CIDT官方主页">
     <meta name="keywords" content="CIDT,戴森球计划">
 
+    <script src="js/modernizr.custom.js"></script>
     <!-- <script src="js/loding.js"></script> -->
     <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.2/dist/algoliasearch-lite.umd.js"
@@ -158,21 +160,82 @@
                 </div>
                 <div id="page-area">
 
-                    <div id="flow-area">
+                    <section id="flow-area">
                         <h2>代表作品</h2>
                         <span class="cutline"></span>
                         <div id="flow-content">
+
+                            <section class="slider">
+                                <div class="slide slide-showing" data-content="content-1">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_1.webp" alt="宇宙八卦阵" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>汝可识锝此阵</span>宇宙八卦阵<span>#戴森球艺术#</span></h2>
+                                </div>
+                                <div class="slide" data-content="content-2">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_2.webp" alt="哆啦A梦" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>爷的童年回来了</span>哆啦A梦<span>#传送带艺术#</span></h2>
+                                </div>
+                                <div class="slide" data-content="content-3">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_3.webp" alt="点亮星河" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>三级文明的浪漫</span>点亮星河<span>#团体作品#</span></h2>
+                                </div>
+                                <div class="slide" data-content="content-4">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_4.webp" alt="化工拓展MOD" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>化工拓展MOD</span>创世之书<span>#游戏模组#</span></h2>
+                                </div>
+                                <div class="slide" data-content="content-5">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_5.webp" alt="战斗MOD" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>战斗拓展MOD</span>深空来敌<span>#游戏模组#</span></h2>
+                                </div>
+                                <div class="slide" data-content="content-6">
+                                    <div class="slide-mover">
+                                        <div class="banner-content">
+                                            <img src="img/banner/banner_6.webp" alt="1PW发电成就" />
+                                        </div>
+                                    </div>
+                                    <h2 class="slider-intro"><span>倒逼制作组修改代码</span>1PW发电成就<span>#突破游戏记录#</span></h2>
+                                </div>
+                                <nav class="slider-contor">
+                                    <button class="button" id="flow-to-prev" title="上一个"> <i
+                                            class="ri-arrow-left-line"></i></button>
+                                    <button class="button" id="show-vidio" title="详情">详情</button>
+                                    <button class="button" id="flow-to-next" title="下一个"><i
+                                            class="ri-arrow-right-line"></i></button>
+                                </nav>
+                            </section>
+                            <script src="js/classie.js"></script>
+                            <script src="js/dynamics.js"></script>
+                            <script src="js/flowing.js"></script>
                         </div>
                         <div class="more-button">更多>>></div>
-                    </div>
+                    </section>
 
-                    <div id="box-area">
+                    <section id="box-area">
                         <h2>实用工具</h2>
                         <span class="cutline"></span>
                         <div class="more-button">更多>>></div>
-                    </div>
+                    </section>
 
-                    <div id="about-area">
+                    <section id="about-area">
                         <h2>关于我们</h2>
                         <span class="cutline"></span>
                         <div id="about-content">
@@ -184,9 +247,9 @@
                             <p>不止游戏</p>
                         </div>
                         <div class="more-button"><a href="/about/about.html#intro-area">更多>>></a></div>
-                    </div>
+                    </section>
 
-                    <div id="member-area">
+                    <section id="member-area">
                         <h2>团队成员</h2>
                         <span class="cutline"></span>
                         <div class="member-box">
@@ -585,13 +648,13 @@
                             </div>
                         </div>
                         <div class="more-button">更多>>></div>
-                    </div>
+                    </section>
 
-                    <div id="shop-area">
+                    <section id="shop-area">
                         <h2>授权周边</h2>
                         <span class="cutline"></span>
                         <div class="more-button">更多>>></div>
-                    </div>
+                    </section>
                 </div>
             </main>
             <!-- 页底|footer -->

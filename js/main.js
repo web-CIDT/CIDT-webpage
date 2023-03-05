@@ -154,7 +154,7 @@ buttonEvent = () => {
 		theMask.classList.remove('dark-mask-show')
 		setTimeout(() => {
 			theMask.classList.remove('dark-mask-hide')
-			theMask.style.removeProperty('display', 'block')
+			theMask.style.removeProperty('display')
 		}, 500)
 	}
 
@@ -168,7 +168,7 @@ buttonEvent = () => {
 
 	shutSidebar = () => {
 		sideBar.classList.remove('sidebar-show')
-		bodyStyle.style.removeProperty('overflow', 'hidden')
+		bodyStyle.style.removeProperty('overflow')
 		maskFadeOut(sideBarMask)
 	}
 
@@ -195,7 +195,7 @@ buttonEvent = () => {
 		chooseMod.classList.remove('content-show')
 		toTop.classList.remove('sitting-mod')
 		share.classList.remove('sitting-mod')
-		eventMask.style.removeProperty('display', 'block')
+		eventMask.style.removeProperty('display')
 	}
 
 	// 设置列表事件
