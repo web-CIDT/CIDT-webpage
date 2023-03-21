@@ -117,10 +117,6 @@
 		if (isOpen) return;
 		isOpen = true;
 
-		// the element that will be transformed
-		var zoomer = item.querySelector('.zoomer');
-		// slide screen preview
-		classie.add(zoomer, 'zoomer--active');
 		// disallow scroll
 		scrollContainer.addEventListener('scroll', noscroll);
 		// apply transforms
