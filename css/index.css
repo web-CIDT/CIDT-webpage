@@ -134,6 +134,26 @@
 	color: var(--orange);
 }
 
+#flow-area .work-vision {
+	position: fixed;
+	opacity: 0;
+	width: 0;
+}
+
+#flow-area .vision-box {
+	position: relative;
+	width: 100%;
+	height: 0;
+}
+
+#flow-area .vision-box iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
 /* about */
 #about-area #about-content {
 	padding: 30px 0;

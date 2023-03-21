@@ -2,26 +2,7 @@
 
 	var bodyEl = document.body,
 		docElem = window.document.documentElement,
-		support = { transitions: Modernizr.csstransitions },
-		// transition end event name
-		transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-		onEndTransition = function (el, callback) {
-			var onEndCallbackFn = function (ev) {
-				if (support.transitions) {
-					if (ev.target != this) return;
-					this.removeEventListener(transEndEventName, onEndCallbackFn);
-				}
-				if (callback && typeof callback === 'function') { callback.call(this); }
-			};
-			if (support.transitions) {
-				el.addEventListener(transEndEventName, onEndCallbackFn);
-			}
-			else {
-				onEndCallbackFn();
-			}
-		},
-		// window sizes
+		// 视窗尺寸
 		win = { width: window.innerWidth, height: window.innerHeight },
 		// some helper vars to disallow scrolling
 		lockScroll = false, xscroll, yscroll,
@@ -31,12 +12,12 @@
 		items = [].slice.call(sliderEl.querySelectorAll('.slide')),
 		// total number of items
 		itemsTotal = items.length,
-		// navigation controls/arrows
-		navRightCtrl = document.getElementById('flow-to-next'),
-		navLeftCtrl = document.getElementById('flow-to-prev'),
-		zoomCtrl = document.getElementById('show-vidio'),
-		// the main content element
-		// contentEl = document.querySelector('.content'),
+		// 控制按钮
+		toNext = document.getElementById('flow-to-next'),
+		toPrev = document.getElementById('flow-to-prev'),
+		showVision = document.getElementById('show-vidio'),
+		// 视频容器
+		contentEl = document.getElementById('work-vision'),
 		// close content control
 		// closeContentCtrl = contentEl.querySelector(''),
 		// index of current item
@@ -71,16 +52,14 @@
 	// event binding
 	initEvents = () => {
 		// open items
-		// zoomCtrl.addEventListener('click', function () {
-		// 	openItem(items[current]);
-		// });
+		showVision.addEventListener('click', () => { showDetail() });
 
 		// close content
 		// closeContentCtrl.addEventListener('click', closeContent);
 
 		// navigation
-		navRightCtrl.addEventListener('click', () => { navigate('right'); resetflow()});
-		navLeftCtrl.addEventListener('click', () => { navigate('left'); resetflow()});
+		toNext.addEventListener('click', () => { navigate('right'); resetflow() });
+		toPrev.addEventListener('click', () => { navigate('left'); resetflow() });
 
 		// window resize
 		window.addEventListener('resize', throttle(function (ev) {
@@ -113,7 +92,7 @@
 	}
 
 	// flow function
-	function flow(){
+	function flow() {
 		navigate('right');
 	}
 
@@ -126,6 +105,11 @@
 	// clear timer
 	clearflow = () => {
 		clearInterval(timer);
+	}
+
+	// show detail
+	showDetail = () => {
+
 	}
 
 	// opens one item
